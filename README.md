@@ -14,4 +14,5 @@ To achieve that goal we need to implement several hardware and software:
 8. Arduino IDE - Write the program to connect the ESP32, BME280, MQTT, Router and SQL database.
 9. DAIKIN Air Conditioner - Object to collect the data.
 
-<img width="1025" alt="Screenshot 2024-12-11 at 12 20 37 AM" src="https://github.com/riefkyiqbalm/Project TA/Hasil Logistic Regersion.jpg">
+![alt AlurKomunikasi](https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Project%20TA/PERANCANGAN%20KOMUNIKASI.jpg?raw = true)
+
