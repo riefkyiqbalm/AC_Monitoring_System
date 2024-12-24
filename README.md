@@ -51,7 +51,7 @@ This is the connection between the bme280 sensor and the microcontroller, in thi
 
 <img width="1025" alt="Screenshot 2024-12-11 at 12 20 37 AM" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Picture/12C_Half_Duplex.jpg">
 
-## 🔌 MQTT Setup <a name = "mqtt setup"></a>
+## 🔌 MQTT Setup <a name = "mqtt_setup"></a>
 
 This project was using mousquito eclipse MQTT broker, to connect the microcontroller to broker write this following code below in your Arduino IDE.
 
@@ -68,12 +68,12 @@ PubSubClient client(espClient);
 ```
 client.setServer("Broker_Address", "PORT that you use");
 ```
-In this project based on the mousquitto (documentation) we use the 1883 port.
-- To send your data to MQTT server you can use this code below
+In this project based on the mousquitto [information](https://test.mosquitto.org/) we use the 1883 port.
+- To send your data to MQTT server you can use this code below.
 ```
 client.publish("Topic that you want use", "Dataset it mustbe in array data structure");
 ```
-You can use this format value to change your data structure to array and data tipe will be change from float to the string. For more information you can visit this website (documentation)
+You can use this format value to change your data structure to array and data tipe will be change from float to the string. For more information you can visit this website [documentation](https://www.programmingelectronics.com/dtostrf/).
 ```
 dtostrf ("Float variabel_name that contain you data","How many digit your data","The precision your data","Array Name");
 ```
