@@ -77,9 +77,9 @@ client.setServer("Broker_Address", "PORT that you use");
 In this project based on the mousquitto [information](https://test.mosquitto.org/) we use the 1883 port.
 - To send your data to MQTT server you can use this code below.
 ```
-client.publish("Topic that you want use", "Dataset it mustbe in array data structure");
+client.publish("Topic that you want use", "DataVariabelName");
 ```
-You can use this format value to change your data structure to array and data tipe will be change from float to the string. For more information you can visit this website [documentation](https://www.programmingelectronics.com/dtostrf/).
+We must change the data type from float to stting because in Node-Red application data will be combaine in array data sturcture. You can use dtostrf() function to change your data tipe from float to the string. For more information you can visit this website [documentation](https://www.programmingelectronics.com/dtostrf/).
 ```
 dtostrf ("Float variabel_name that contain you data","How many digit your data","The precision your data","Array Name");
 ```
@@ -98,11 +98,11 @@ void reconnect() {
       }
 ```
 ### 🔧 NODE-RED Setup <a name = "node_red_setup"></a>
-After the Nodejs and Node-red installation complete you can open the Nodejs CMD and write this command.
+After the Nodejs and Node-Red installation complete you can open the Nodejs CMD and write this command.
  ```
 C:\Users\Admin>node-red
 ```
-Node-Red was a web based application, so you must open the latest browser and go to [http://localhost:1880/](http://localhost:1880/). After the Node-Red is fully installed you can manage the pallete, because the MySQL pallete do not installed in Node-Red as default. Go to Pallete ➡️ Install ➡️ Type MySQL in search bar ➡️ Find the library and click install button. It was show in Picture 4 
+If there is no error massage you must open the lastest browser because Node-Red was a web-based application and go to [http://localhost:1880/](http://localhost:1880/). After the Node-Red is fully installed you can manage the pallete, because the MySQL pallete do not installed in Node-Red as default. Go to Pallete ➡️ Install ➡️ Type MySQL in search bar ➡️ Find the library and click install button. It was show in Picture 4 
 
 <img width="400" height = "500" alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/MySQL_Library.jpg">
 
@@ -119,6 +119,31 @@ CREATE TABLE NAME_OF_YOUR_TABLE (
     SECOND_COLOUMN_NAME TypeData
 );
 ```
+Picture 5 show the example database in this project with 4 column name (ID, Temperature Masuk (_Temperature in_), Humidity Masuk (_Humidity in_), Tanggal (_Date_).
+
+<img width="1025" alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Data_Storing.jpg">
+
+Picture 5
+
+## 📱 UI DESIGN <a name = "ui_design"></a>
+
+Picture 6 show us about this project Node-Red block configuration and Picture 7 showed the result of our design dashboard. Each blocks in picture 6 need to be configurate, so i am attached a file with a name "Node-Red configuration" in this repostory which is contain picture of all block configuration.
+
+<img width="1025" alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Node-RED_design.jpg">
+
+Picture 6
+
+<img width="1025" alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/UI_Node-RED.jpg">
+
+Picture 7
+
+To get more clear information this is was the function of each block.
+- Purple color block (communication block) ➡️ Recieve a message that contain data from router/mobile hotspot and inject it to block with the blue color and yellow color.
+- Blue color block (dashboard block) ➡️ Display the data to the dashbord with GAUGE fitur.
+- Yellow color block (array bloc) ➡️ Combaine two message from MQTT Broker and store it in array data structure.
+- Cream color block (function block) ➡️ Recieve the array dataset and store it to the variabel and send it to the MySQL database.
+- Green color block (Payload Block) ➡️ Inform the developer about the dataset condition (for debugging) before data send it to the MySQL database.
+- Orange color block (SQL block) ➡️ Initiation the database address, name and user.
 
 
 
