@@ -51,7 +51,7 @@ This is the connection between the bme280 sensor and the microcontroller, in thi
 
 <img width="1025" alt="Screenshot 2024-12-11 at 12 20 37 AM" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Picture/12C_Half_Duplex.jpg">
 
-## 🔌 MQTT Setup <a name = "mqtt_setup"></a>
+## 📭 MQTT Setup <a name = "mqtt_setup"></a>
 
 This project was using mousquito eclipse MQTT broker, to connect the microcontroller to broker write this following code below in your Arduino IDE.
 
