@@ -4,16 +4,16 @@
 
   To achieve that goal we need to implement several hardware and software:
 
-    1. BME280 ➡️ Gathers and sense the temperature and humidity data.
-    2. ESP32 WEMOS Lolin ➡️ Read the data, convert data to digital or analog signal, and send it to the cloud connection. 
-    3. Router or Mobile Hotspot ➡️ Recieve the data and send it to the database.
-    4. MQTT Protokol ➡️ Package the data and ensure the data was have security systems.
-    5. XAMPP ➡️ Turn the client laptop to become SQL server database.
-    6. SQL Database ➡️ Store the data and convert prepared meta data.
-    7. NODE RED ➡️ Design the user interface system to inform the filter condition and the temperature and humidity value.
-    8. Arduino IDE ➡️ Write the program to connect the ESP32, BME280, MQTT, Router and SQL database.
-    9. DAIKIN Air Conditioner ➡️ Object to collect the data.
-    10. Microsoft Excel ➡️ Analyze the data using logistic regression and wilcoxon rank sum test statistical method.
+  1. BME280 ➡️ Gathers and sense the temperature and humidity data.
+  2. ESP32 WEMOS Lolin ➡️ Read the data, convert data to digital or analog signal, and send it to the cloud connection. 
+  3. Router or Mobile Hotspot ➡️ Recieve the data and send it to the database.
+  4. MQTT Protokol ➡️ Package the data and ensure the data was have security systems.
+  5. XAMPP ➡️ Turn the client laptop to become SQL server database.
+  6. SQL Database ➡️ Store the data and convert prepared meta data.
+  7. NODE RED ➡️ Design the user interface system to inform the filter condition and the temperature and humidity value.
+  8. Arduino IDE ➡️ Write the program to connect the ESP32, BME280, MQTT, Router and SQL database.
+  9. DAIKIN Air Conditioner ➡️ Object to collect the data.
+  10. Microsoft Excel ➡️ Analyze the data using logistic regression and wilcoxon rank sum test statistical method.
 
 <p align = "center" >
 <img alt="gambar_komunikasi" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Communication_Design.jpg"/>
@@ -149,7 +149,7 @@ Picture 5 MySQL Example
 
 ## 📱 UI DESIGN <a name = "ui_design"></a>
 
-  Picture 6 show us about this project Node-Red block configuration and Picture 7 showed the result of our design dashboard. Each blocks in picture 6 need to be configurate, so i am attached a file with a name "Node-Red configuration" in this repostory which is contain picture of all block configuration.
+  Picture 6 show us about this project Node-Red block configuration and Picture 7 showed the result of our design dashboard. Each blocks in picture 6 need to be configurate, so i am attached a file with a name ["Node-Red configuration"](https://github.com/riefkyiqbalm/AC_Monitoring_System/tree/master/Node-Red%20Configuration) in this repostory which is contain picture of all block configuration.
 
 <p align = "center" >
 <img alt="block_configurate" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Node-RED_design.jpg"/>
@@ -168,13 +168,14 @@ Picture 6 Block Configuration
 Picture 7 Dashboard Example
 </p>
 
-  To get more clear information this is was the function of each block.
-    - Purple color block (communication block) ➡️ Recieve a message that contain data from router/mobile hotspot and inject it to block with the blue color and yellow color.
-    - Blue color block (dashboard block) ➡️ Display the data to the dashbord with GAUGE fitur.
-    - Yellow color block (array bloc) ➡️ Combaine two message from MQTT Broker and store it in array data structure.
-    - Cream color block (function block) ➡️ Recieve the array dataset and store it to the variabel and send it to the MySQL database.
-    - Green color block (Payload Block) ➡️ Inform the developer about the dataset condition (for debugging) before data send it to the MySQL database.
-    - Orange color block (SQL block) ➡️ Initiation the database address, name and user.
+To get more clear information this is was the function of each block.
+
+  - Purple color block (communication block) ➡️ Recieve a message that contain data from router/mobile hotspot and inject it to block with the blue color and yellow color.
+  - Blue color block (dashboard block) ➡️ Display the data to the dashbord with GAUGE fitur.
+  - Yellow color block (array bloc) ➡️ Combaine two message from MQTT Broker and store it in array data structure.
+  - Cream color block (function block) ➡️ Recieve the array dataset and store it to the variabel and send it to the MySQL database.
+  - Green color block (Payload Block) ➡️ Inform the developer about the dataset condition (for debugging) before data send it to the MySQL database.
+  - Orange color block (SQL block) ➡️ Initiation the database address, name and user.
 
 
 
