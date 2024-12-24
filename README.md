@@ -15,7 +15,7 @@ To achieve that goal we need to implement several hardware and software:
 9. DAIKIN Air Conditioner - Object to collect the data.
 10. Microsoft Excel - Analyze the data using logistic regression and wilcoxon rank sum test statistical method.
     
-<img width="1025" alt="gambar_komunikasi" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Picture/Communication_Design.jpg">
+<img width="1025" alt="gambar_komunikasi" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Communication_Design.jpg">
 Picture.1 Communication Design
 
 ## ❗❗ Disclaimer ❗❗
@@ -43,13 +43,13 @@ By using this resource, you agree to use it solely for learning purposes.
 
 ## 🔌 Hardware Wiring <a name = "hardware_wiring"></a>
 
-<img width="1025" alt="gambar_harware_wiring" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Picture/Hardware_Wiring.jpg">
+<img width="1025" alt="gambar_harware_wiring" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Hardware_Wiring.jpg">
 
 Picture.2 Hardware Wiring
 
 This is the connection between the bme280 sensor and the microcontroller, in this connection based on 12C protocol which is was the half-duplex communication
 
-<img width="1025" alt="Screenshot 2024-12-11 at 12 20 37 AM" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Picture/12C_Half_Duplex.jpg">
+<img width="1025" alt="half_duplex" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/12C_Half_Duplex.jpg">
 
 ## 💻 Installation <a name = "installation"></a>
 
