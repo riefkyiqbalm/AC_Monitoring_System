@@ -129,11 +129,11 @@ Picture 5
 
 Picture 6 show us about this project Node-Red block configuration and Picture 7 showed the result of our design dashboard. Each blocks in picture 6 need to be configurate, so i am attached a file with a name "Node-Red configuration" in this repostory which is contain picture of all block configuration.
 
-<img width="1025" alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Node-RED_design.jpg">
+<img alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Node-RED_design.jpg">
 
 Picture 6
 
-<img width="1025" alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/UI_Node-RED.jpg">
+<img alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/UI_Node-RED.jpg">
 
 Picture 7
 
