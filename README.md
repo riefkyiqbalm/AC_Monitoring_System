@@ -37,14 +37,14 @@ By using this resource, you agree to use it solely for learning purposes.
 
 ## 📝 Table of Contents
 
-  - [Hardware Wiring](#hardware_wiring)
-  - [Installation](#installation)
-    - [MQTT Setup](#mqtt_setup)
-    - [Node-Red_Setup](#node_red_setup)
-    - [XAMPP Setup](#xampp_setup)
-  - [MySQL Table Design](#mysql_table_design)
-  - [UI Design](#ui_design)
-  - [Acknowledgments](#acknowledgments)
+  🔌   [Hardware Wiring](#hardware_wiring)
+  💻   [Installation](#installation)
+     ⛓️   [MQTT Setup](#mqtt_setup)
+    🔴   [Node-Red_Setup](#node_red_setup)
+    ⛏️   [XAMPP Setup](#xampp_setup)
+  📒  [MySQL Table Design](#mysql_table_design)
+  📱   [UI Design](#ui_design)
+  🎉  [Acknowledgments](#acknowledgments)
 
 ## 🔌 Hardware Wiring <a name = "hardware_wiring"></a>
 <p align = "center" >
@@ -68,7 +68,7 @@ Picture 3 Half-Duplex
 
   Installation start by [Arduino IDE](https://docs.arduino.cc/software/ide-v1/tutorials/Windows/), [Node-Red](https://nodered.org/docs/getting-started/windows), and [XAMPP](https://www.apachefriends.org/download.html) from the each software website. For the Node-Red installation if you running on windows you must insttall the [node.js platform](https://nodejs.org/en/).
 
-  ### 🔧 MQTT Setup <a name = "mqtt_setup"></a>
+  ### ⛓️ MQTT Setup <a name = "mqtt_setup"></a>
 
   This project was using mousquito eclipse MQTT broker, to connect the microcontroller to broker write this following code below in your Arduino IDE.
 
@@ -108,7 +108,7 @@ void reconnect() {
       Serial.println("connected");
       }
 ```
-  ### 🔧 Node-Red Setup <a name = "node_red_setup"></a>
+  ### 🔴 Node-Red Setup <a name = "node_red_setup"></a>
   After the Nodejs and Node-Red installation complete you can open the Nodejs CMD and write this command.
  ```
   C:\Users\Admin>node-red
@@ -178,7 +178,9 @@ To get more clear information this is was the function of each block.
   - Green color block (Payload Block) ➡️ Inform the developer about the dataset condition (for debugging) before data send it to the MySQL database.
   - Orange color block (SQL block) ➡️ Initiation the database address, name and user.
 
-## 📱 Acknowledgments <a name = "acknowledgments"></a>
+## 🎉 Acknowledgments <a name = "acknowledgments"></a>
+
+This project was my final project during my time as student at Islamic University Of Indonesia. Special thank's for my lecturer because I can't completed this project without my lecturer ([Agung Nugroho Adi, ST., MT](https://mechanical.uii.ac.id/agung-nugroho-adi-st-mt/)) feedback and insight and for the mor information you can read my [full report](https://dspace.uii.ac.id/handle/123456789/33358).
 
 
 
