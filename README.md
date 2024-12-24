@@ -40,10 +40,10 @@ By using this resource, you agree to use it solely for learning purposes.
   - [Hardware Wiring](#hardware_wiring)
   - [Installation](#installation)
     - [MQTT Setup](#mqtt_setup)
-    - [NODE-RED_Setup](#node_red_setup)
+    - [Node-Red_Setup](#node_red_setup)
     - [XAMPP Setup](#xampp_setup)
   - [MySQL Table Design](#mysql_table_design)
-  - [UI DESIGN](#ui_design)
+  - [UI Design](#ui_design)
   - [Acknowledgments](#acknowledgments)
 
 ## 🔌 Hardware Wiring <a name = "hardware_wiring"></a>
@@ -55,6 +55,7 @@ By using this resource, you agree to use it solely for learning purposes.
 Picture 2 Hardware Wiring
 </p>
   This is the connection between the bme280 sensor and the microcontroller, in this connection based on 12C protocol which is was the half-duplex communication
+  
 <p align = "center" >
 <img alt="half_duplex" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/12C_Half_Duplex.jpg"/>
 </p>
@@ -107,7 +108,7 @@ void reconnect() {
       Serial.println("connected");
       }
 ```
-  ### 🔧 NODE-RED Setup <a name = "node_red_setup"></a>
+  ### 🔧 Node-Red Setup <a name = "node_red_setup"></a>
   After the Nodejs and Node-Red installation complete you can open the Nodejs CMD and write this command.
  ```
   C:\Users\Admin>node-red
@@ -123,7 +124,7 @@ void reconnect() {
 Picture 4 MySQL Library
 </p>
 
-  ### 🔧 XAMPP Setup <a name = "xampp_setup"></a>
+  ### ⛏️ XAMPP Setup <a name = "xampp_setup"></a>
   After XAMPP installed open the XAMPP app ➡️ click start button on the Apache module and SQL module ➡️ go to browser and type [localhost](http://localhost/dashboard/), once you in XAMPP dashboard go to phpMyAdmin ➡️ click new to create a new database or you can see full documentation in [here](https://www.phpmyadmin.net/docs/).
 
 ## 📒 MySQL Table Design <a name = "mysql_table_design"></a>
@@ -147,7 +148,7 @@ CREATE TABLE NAME_OF_YOUR_TABLE (
 Picture 5 MySQL Example
 </p>
 
-## 📱 UI DESIGN <a name = "ui_design"></a>
+## 📱 UI Design <a name = "ui_design"></a>
 
   Picture 6 show us about this project Node-Red block configuration and Picture 7 showed the result of our design dashboard. Each blocks in picture 6 need to be configurate, so i am attached a file with a name ["Node-Red configuration"](https://github.com/riefkyiqbalm/AC_Monitoring_System/tree/master/Node-Red%20Configuration) in this repostory which is contain picture of all block configuration.
 
@@ -176,6 +177,9 @@ To get more clear information this is was the function of each block.
   - Cream color block (function block) ➡️ Recieve the array dataset and store it to the variabel and send it to the MySQL database.
   - Green color block (Payload Block) ➡️ Inform the developer about the dataset condition (for debugging) before data send it to the MySQL database.
   - Orange color block (SQL block) ➡️ Initiation the database address, name and user.
+
+## 📱 Acknowledgments <a name = "acknowledgments"></a>
+
 
 
 
