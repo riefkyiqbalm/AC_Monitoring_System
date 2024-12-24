@@ -33,10 +33,10 @@ By using this resource, you agree to use it solely for learning purposes.
 ## 📝 Table of Contents
 
 - [Hardware Wiring](#hardware_wiring)
-- [MQTT Setup](#mqtt_setup)
 - [Installation](#installation)
-  - [NODE-RED_Installation](#node_red_installation)
-  - [XAMPP Installation](#xampp_installation)
+  - [MQTT Setup](#mqtt_setup)
+  - [NODE-RED_Setup](#node_red_setup)
+  - [XAMPP Setup](#xampp_setup)
 - [MySQL Tabel Design](#mysql_tabel_design)
 - [UI DESIGN](#ui_design)
 - [Acknowledgments](#acknowledgments)
@@ -51,7 +51,11 @@ This is the connection between the bme280 sensor and the microcontroller, in thi
 
 <img width="1025" alt="Screenshot 2024-12-11 at 12 20 37 AM" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Picture/12C_Half_Duplex.jpg">
 
-## 📭 MQTT Setup <a name = "mqtt_setup"></a>
+## 💻 Installation <a name = "installation"></a>
+
+Installation start by [Arduino IDE](https://docs.arduino.cc/software/ide-v1/tutorials/Windows/), [Node-Red](https://nodered.org/docs/getting-started/windows), and [XAMPP](https://www.apachefriends.org/download.html) from the each software website. For the Node-Red installation if you running on windows you must insttall the [node.js enviroment](https://nodejs.org/en/).
+
+### 🔧 MQTT Setup <a name = "mqtt_setup"></a>
 
 This project was using mousquito eclipse MQTT broker, to connect the microcontroller to broker write this following code below in your Arduino IDE.
 
@@ -91,5 +95,11 @@ void reconnect() {
       Serial.println("connected");
       }
 ```
+### 🔧 NODE-RED Setup <a name = "node_red_setup"></a>
+    
+
+### 🔧 XAMPP Setup <a name = "xampp_setup"></a>
+
+
 
 
