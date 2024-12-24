@@ -16,7 +16,7 @@ To achieve that goal we need to implement several hardware and software:
 10. Microsoft Excel - Analyze the data using logistic regression and wilcoxon rank sum test statistical method.
     
 <img width="1025" alt="gambar_komunikasi" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Communication_Design.jpg">
-Picture.1 Communication Design
+Picture 1 Communication Design
 
 ## ❗❗ Disclaimer ❗❗
 
@@ -45,11 +45,13 @@ By using this resource, you agree to use it solely for learning purposes.
 
 <img width="1025" alt="gambar_harware_wiring" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Hardware_Wiring.jpg">
 
-Picture.2 Hardware Wiring
+Picture 2 Hardware Wiring
 
 This is the connection between the bme280 sensor and the microcontroller, in this connection based on 12C protocol which is was the half-duplex communication
 
 <img width="1025" alt="half_duplex" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/12C_Half_Duplex.jpg">
+
+Picture 3 Half-Duplex
 
 ## 💻 Installation <a name = "installation"></a>
 
@@ -96,10 +98,27 @@ void reconnect() {
       }
 ```
 ### 🔧 NODE-RED Setup <a name = "node_red_setup"></a>
-    
+After the Nodejs and Node-red installation complete you can open the Nodejs CMD and write this command.
+ ```
+C:\Users\Admin>node-red
+```
+Node-Red was a web based application, so you must open the latest browser and go to [http://localhost:1880/](http://localhost:1880/). After the Node-Red is fully installed you can manage the pallete, because the MySQL pallete do not installed in Node-Red as default. Go to Pallete ➡️ Install ➡️ Type MySQL in search bar ➡️ Find the library and click install button. It was show in Picture 4 
 
+<img width="400" height = "500" alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/MySQL_Library.jpg">
+
+Picture 4 MySQL Library
 ### 🔧 XAMPP Setup <a name = "xampp_setup"></a>
+After XAMPP installed open the XAMPP app ➡️ click start button on the Apache module and SQL module ➡️ go to browser and type [localhost](http://localhost/dashboard/), once you in XAMPP dashboard go to phpMyAdmin ➡️ click new to create a new database or you can see full documentation in [here](https://www.phpmyadmin.net/docs/).
 
+## 📒 MySQL Tabel Design <a name = "mysql_table_design"></a>
+You can generate database in MySQL by following this query.
+```
+CREATE DATABASE NAME_OF_YOUR_DATABASE
+CREATE TABLE NAME_OF_YOUR_TABLE (
+    FRIST_COLOUMN_NAME TypeData,
+    SECOND_COLOUMN_NAME TypeData
+);
+```
 
 
 
