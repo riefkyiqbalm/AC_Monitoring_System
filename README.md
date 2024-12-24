@@ -77,7 +77,19 @@ You can use this format value to change your data structure to array and data ti
 ```
 dtostrf ("Float variabel_name that contain you data","How many digit your data","The precision your data","Array Name");
 ```
+If the connection was failed you can develop this function.
+```
+void reconnect() {
+  // Reconnect loop 
+  while (!client.connected()) {
+    Serial.print("Attempting MQTT connection...");
+     String clientId = "ESP32Client-";
+      clientId += String(random(0xffff), HEX);
 
-
+      // If the reconnection was succes
+      if (client.connect(clientId.c_str()))  {   
+      Serial.println("connected");
+      }
+```
 
 
