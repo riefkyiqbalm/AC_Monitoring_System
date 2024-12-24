@@ -15,10 +15,10 @@ To achieve that goal we need to implement several hardware and software:
 9. DAIKIN Air Conditioner - Object to collect the data.
 10. Microsoft Excel - Analyze the data using logistic regression and wilcoxon rank sum test statistical method.
     
-<img width="1025" alt="Screenshot 2024-12-11 at 12 20 37 AM" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Communication_Design.jpg">
+<img width="1025" alt="gambar_komunikasi" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Communication_Design.jpg">
 Picture.1 Communication Design
 
-## Disclaimer
+## ❗❗ Disclaimer ❗❗
 
 This project is for "educational and research purposes only".
 
@@ -29,3 +29,55 @@ This project is for "educational and research purposes only".
 - Consult a maintenance enginner for maintenance deccision
 
 By using this resource, you agree to use it solely for learning purposes.
+
+## 📝 Table of Contents
+
+- [Hardware Wiring](#hardware_wiring)
+- [MQTT Setup](#mqtt_setup)
+- [Installation](#installation)
+  - [NODE-RED_Installation](#node_red_installation)
+  - [XAMPP Installation](#xampp_installation)
+- [MySQL Tabel Design](#mysql_tabel_design)
+- [UI DESIGN](#ui_design)
+- [Acknowledgments](#acknowledgments)
+
+## 🔌 Hardware Wiring <a name = "hardware_wiring"></a>
+
+<img width="1025" alt="gambar_harware_wiring" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Picture/Hardware_Wiring.jpg">
+
+Picture.2 Hardware Wiring
+
+This is the connection between the bme280 sensor and the microcontroller, in this connection based on 12C protocol which is was the half-duplex communication
+
+<img width="1025" alt="Screenshot 2024-12-11 at 12 20 37 AM" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Picture/12C_Half_Duplex.jpg">
+
+## 🔌 MQTT Setup <a name = "mqtt setup"></a>
+
+This project was using mousquito eclipse MQTT broker, to connect the microcontroller to broker write this following code below in your Arduino IDE.
+
+- Import Library
+```
+#include <PubSubClient.h>
+```
+- Define the Variable of Broker as a server and Microcontroller as a Client.
+```
+const char* mqtt_server = "test.mosquitto.org";
+PubSubClient client(espClient);
+```
+- Write this code in the "void setup()" function.
+```
+client.setServer("Broker_Address", "PORT that you use");
+```
+In this project based on the mousquitto (documentation) we use the 1883 port.
+- To send your data to MQTT server you can use this code below
+```
+client.publish("Topic that you want use", "Dataset it mustbe in array data structure");
+```
+You can use this format value to change your data structure to array and data tipe will be change from float to the string. For more information you can visit this website (documentation)
+```
+dtostrf ("Float variabel_name that contain you data","How many digit your data","The precision your data","Array Name");
+```
+
+
+
+
