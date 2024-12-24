@@ -15,7 +15,7 @@ To achieve that goal we need to implement several hardware and software:
 9. DAIKIN Air Conditioner - Object to collect the data.
 10. Microsoft Excel - Analyze the data using logistic regression and wilcoxon rank sum test statistical method.
     
-<img width="1025" alt="gambar_komunikasi" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Communication_Design.jpg">
+<img width="1025" alt="gambar_komunikasi" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Picture/Communication_Design.jpg">
 Picture.1 Communication Design
 
 ## ❗❗ Disclaimer ❗❗
