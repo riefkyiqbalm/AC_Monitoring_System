@@ -4,19 +4,24 @@ In this project i was developing the air conditioner monitoring system to find o
 
 To achieve that goal we need to implement several hardware and software:
 
-1. BME280 - Gathers and sense the temperature and humidity data.
-2. ESP32 WEMOS Lolin - Read the data, convert data to digital or analog signal, and send it to the cloud connection. 
-3. Router or Mobile Hotspot - Recieve the data and send it to the database.
-4. MQTT Protokol - Package the data and ensure the data was have security systems.
-5. XAMPP - Turn the client laptop to become SQL server database.
-6. SQL Database - Store the data and convert prepared meta data.
-7. NODE RED - Design the user interface system to inform the filter condition and the temperature and humidity value.
-8. Arduino IDE - Write the program to connect the ESP32, BME280, MQTT, Router and SQL database.
-9. DAIKIN Air Conditioner - Object to collect the data.
-10. Microsoft Excel - Analyze the data using logistic regression and wilcoxon rank sum test statistical method.
-    
-<img width="1025" alt="gambar_komunikasi" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Communication_Design.jpg">
+1. BME280 ➡️ Gathers and sense the temperature and humidity data.
+2. ESP32 WEMOS Lolin ➡️ Read the data, convert data to digital or analog signal, and send it to the cloud connection. 
+3. Router or Mobile Hotspot ➡️ Recieve the data and send it to the database.
+4. MQTT Protokol ➡️ Package the data and ensure the data was have security systems.
+5. XAMPP ➡️ Turn the client laptop to become SQL server database.
+6. SQL Database ➡️ Store the data and convert prepared meta data.
+7. NODE RED ➡️ Design the user interface system to inform the filter condition and the temperature and humidity value.
+8. Arduino IDE ➡️ Write the program to connect the ESP32, BME280, MQTT, Router and SQL database.
+9. DAIKIN Air Conditioner ➡️ Object to collect the data.
+10. Microsoft Excel ➡️ Analyze the data using logistic regression and wilcoxon rank sum test statistical method.
+
+<p align = "center" >
+<img alt="gambar_komunikasi" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Communication_Design.jpg"/>
+</p>
+
+<p align = "center" >
 Picture 1 Communication Design
+</p>
 
 ## ❗❗ Disclaimer ❗❗
 
@@ -42,20 +47,25 @@ By using this resource, you agree to use it solely for learning purposes.
 - [Acknowledgments](#acknowledgments)
 
 ## 🔌 Hardware Wiring <a name = "hardware_wiring"></a>
+<p align = "center" >
+<img  alt="gambar_harware_wiring" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Hardware_Wiring.jpg"/>
+</p>
 
-<img width="1025" alt="gambar_harware_wiring" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Hardware_Wiring.jpg">
-
+<p align = "center" >
 Picture 2 Hardware Wiring
-
+</p>
 This is the connection between the bme280 sensor and the microcontroller, in this connection based on 12C protocol which is was the half-duplex communication
+<p align = "center" >
+<img alt="half_duplex" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/12C_Half_Duplex.jpg"/>
+</p>
 
-<img width="1025" alt="half_duplex" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/12C_Half_Duplex.jpg">
-
+<p align = "center" >
 Picture 3 Half-Duplex
+</p>
 
 ## 💻 Installation <a name = "installation"></a>
 
-Installation start by [Arduino IDE](https://docs.arduino.cc/software/ide-v1/tutorials/Windows/), [Node-Red](https://nodered.org/docs/getting-started/windows), and [XAMPP](https://www.apachefriends.org/download.html) from the each software website. For the Node-Red installation if you running on windows you must insttall the [node.js enviroment](https://nodejs.org/en/).
+Installation start by [Arduino IDE](https://docs.arduino.cc/software/ide-v1/tutorials/Windows/), [Node-Red](https://nodered.org/docs/getting-started/windows), and [XAMPP](https://www.apachefriends.org/download.html) from the each software website. For the Node-Red installation if you running on windows you must insttall the [node.js platform](https://nodejs.org/en/).
 
 ### 🔧 MQTT Setup <a name = "mqtt_setup"></a>
 
@@ -102,15 +112,22 @@ After the Nodejs and Node-Red installation complete you can open the Nodejs CMD 
  ```
 C:\Users\Admin>node-red
 ```
-If there is no error massage you must open the lastest browser because Node-Red was a web-based application and go to [http://localhost:1880/](http://localhost:1880/). After the Node-Red is fully installed you can manage the pallete, because the MySQL pallete do not installed in Node-Red as default. Go to Pallete ➡️ Install ➡️ Type MySQL in search bar ➡️ Find the library and click install button. It was show in Picture 4 
+If there is no error massage you must open the lastest browser because Node-Red was a web-based application and go to [http://localhost:1880/](http://localhost:1880/). After the Node-Red is fully installed you can manage the pallete, because the MySQL pallete do not installed in Node-Red as default. Go to Pallete ➡️ Install ➡️ Type MySQL in search bar ➡️ Find the library and click install button. It was show in Picture 4.
 
-<img width="400" height = "500" alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/MySQL_Library.jpg">
+<p align = "center" >
+<img width="400" height = "500" alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/MySQL_Library.jpg"/>
+</p>
 
+
+<p align = "center" >
 Picture 4 MySQL Library
+</p>
+
 ### 🔧 XAMPP Setup <a name = "xampp_setup"></a>
 After XAMPP installed open the XAMPP app ➡️ click start button on the Apache module and SQL module ➡️ go to browser and type [localhost](http://localhost/dashboard/), once you in XAMPP dashboard go to phpMyAdmin ➡️ click new to create a new database or you can see full documentation in [here](https://www.phpmyadmin.net/docs/).
 
 ## 📒 MySQL Tabel Design <a name = "mysql_table_design"></a>
+
 You can generate database in MySQL by following this query.
 ```
 CREATE DATABASE NAME_OF_YOUR_DATABASE
@@ -121,21 +138,35 @@ CREATE TABLE NAME_OF_YOUR_TABLE (
 ```
 Picture 5 show the example database in this project with 4 column name (ID, Temperature Masuk (_Temperature in_), Humidity Masuk (_Humidity in_), Tanggal (_Date_).
 
-<img width="1025" alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Data_Storing.jpg">
+<p align = "center" >
+<img alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Data_Storing.jpg"/>
+</p>
 
-Picture 5
+
+<p align = "center" >
+Picture 5 MySQL Example
+</p>
 
 ## 📱 UI DESIGN <a name = "ui_design"></a>
 
 Picture 6 show us about this project Node-Red block configuration and Picture 7 showed the result of our design dashboard. Each blocks in picture 6 need to be configurate, so i am attached a file with a name "Node-Red configuration" in this repostory which is contain picture of all block configuration.
 
-<img alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Node-RED_design.jpg">
+<p align = "center" >
+<img alt="block_configurate" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Node-RED_design.jpg"/>
+</p>
 
-Picture 6
 
-<img alt="gambar_my_sql" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/UI_Node-RED.jpg">
+<p align = "center" >
+Picture 6 Block Configuration
+</p>
 
-Picture 7
+<p align = "center" >
+<img alt="dashboard_result" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/UI_Node-RED.jpg"/>
+</p>
+
+<p align = "center" >
+Picture 7 Dashboard Example
+</p>
 
 To get more clear information this is was the function of each block.
 - Purple color block (communication block) ➡️ Recieve a message that contain data from router/mobile hotspot and inject it to block with the blue color and yellow color.
