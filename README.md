@@ -78,7 +78,7 @@ Picture 2 Hardware Wiring
 </p>
 
 <p align = "center" >
-Picture 3 Half-Duplex
+Picture 3 I2C and SPI Wiring
 </p>
 
 ## 💻 Installation <a name = "installation"></a>
