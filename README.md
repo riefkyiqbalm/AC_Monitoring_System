@@ -5,10 +5,11 @@
 
 <div align="center">
 
-[![Contributor](https://img.shields.io/badge/Contributor-3-green)](#acknowledgments)
+[![Contributor](https://img.shields.io/badge/Contributor-3-green)]
 
 </div>
 
+---
 # Air Condtioner Monitoring System
 
 
