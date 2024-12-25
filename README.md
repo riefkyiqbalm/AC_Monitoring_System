@@ -1,4 +1,10 @@
-# AC Monitoring System
+<p align="center">
+  <a href="" rel="noopener">
+ <img src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Air_Conditioner%20v3.jpg" alt="Project Design"></a>
+</p>
+<h3 align="center">Air Condtioner Monitoring System</h3>
+
+<div align="center">
 
   In this project i was developing the air conditioner monitoring system to find out the evaporator and condensor filter condition during the COVID-19 pandemic by collected the temperature and humidity data and send it to the dashboard User Interface.
 
