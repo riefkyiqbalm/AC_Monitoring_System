@@ -5,7 +5,7 @@
 
 <div align="center">
 
-[![Contributor](https://img.shields.io/badge/Contributor-3-green)]
+[![Contributor](https://img.shields.io/badge/Contributor-3-green)](#acknowledgments)
 
 </div>
 
@@ -51,14 +51,15 @@ By using this resource, you agree to use it solely for learning purposes.
 
 ## 📝 Table of Contents
 
-  🔌   [Hardware Wiring](#hardware_wiring)
-  💻   [Installation](#installation)
-     ⛓️   [MQTT Setup](#mqtt_setup)
-    🔴   [Node-Red_Setup](#node_red_setup)
-    ⛏️   [XAMPP Setup](#xampp_setup)
-  📒  [MySQL Table Design](#mysql_table_design)
-  📱   [UI Design](#ui_design)
-  🎉  [Acknowledgments](#acknowledgments)
+-  🔌   [Hardware Wiring](#hardware_wiring)
+-  💻   [Installation](#installation)
+  -   ⛓️   [MQTT Setup](#mqtt_setup)
+  -  🔴   [Node-Red_Setup](#node_red_setup)
+  -  ⛏️   [XAMPP Setup](#xampp_setup)
+-  📒  [MySQL Table Design](#mysql_table_design)
+-  📱   [UI Design](#ui_design)
+-  🎉  [Acknowledgments](#acknowledgments)
+
 
 ## 🔌 Hardware Wiring <a name = "hardware_wiring"></a>
 <p align = "center" >
