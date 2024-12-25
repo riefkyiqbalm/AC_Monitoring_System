@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Air_Conditioner%20v3.jpg" alt="Project Design"></a>
+ <img src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Air_Conditioner%20v4.png" alt="Project Design"></a>
 </p>
 
 <div align="center">
