@@ -5,15 +5,15 @@
 
 <div align="center">
 
-[![Contributor](https://img.shields.io/badge/Contributor-3-green)](#acknowledgments)
+[![Contributors](https://img.shields.io/badge/Contributors-2-green)](#acknowledgments)
+
 
 </div>
 
+
+<h3 align="center">Air Condtioner Monitoring System</h3>
+
 ---
-# Air Condtioner Monitoring System
-
-
-
   In this project i was developing the air conditioner monitoring system to find out the evaporator and condensor filter condition during the COVID-19 pandemic by collected the temperature and humidity data and send it to the dashboard User Interface.
 
   To achieve that goal we need to implement several hardware and software:
