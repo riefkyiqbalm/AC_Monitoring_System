@@ -6,7 +6,8 @@
 <div align="center">
 
 [![Contributors](https://img.shields.io/badge/Contributors-2-blue)](#acknowledgments)
-![Static Badge](https://img.shields.io/badge/Status-Active-green)
+![Status](https://img.shields.io/badge/Status-Active-green)
+[![Code Size](https://img.shields.io/badge/Code_Size-6.85KB-green)](https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/arduino_code)
 
 
 </div>
