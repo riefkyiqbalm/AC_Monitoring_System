@@ -31,6 +31,7 @@
   9. DAIKIN Air Conditioner ➡️ Object to collect the data.
   10. Microsoft Excel ➡️ Analyze the data using logistic regression and wilcoxon rank sum test statistical method.
 
+
 <p align = "center" >
 <img alt="gambar_komunikasi" src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Communication_Design.jpg"/>
 </p>
@@ -48,6 +49,7 @@ This project is for "educational and research purposes only".
   - Past performance does not indicate future results
   - Creator assumes no liability for the kind of damage
   - Consult a maintenance enginner for maintenance deccision
+  - The model in frist image was made by myself 
 
 By using this resource, you agree to use it solely for learning purposes.
 
