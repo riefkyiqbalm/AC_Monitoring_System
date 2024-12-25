@@ -3,6 +3,11 @@
  <img src="https://github.com/riefkyiqbalm/AC_Monitoring_System/blob/master/Picture/Air_Conditioner%20v3.jpg" alt="Project Design"></a>
 </p>
 
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+![Code Size](https://img.shields.io/github/languages/code-size/elvanselvano/purwadhika-final-project)
+![Contributors](https://img.shields.io/github/contributors/elvanselvano/purwadhika-final-project)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
+
 # Air Condtioner Monitoring System
 
 
