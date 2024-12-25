@@ -6,6 +6,7 @@
 <div align="center">
 
 [![Contributors](https://img.shields.io/badge/Contributors-2-green)](#acknowledgments)
+![Static Badge](https://img.shields.io/badge/Status-Active-green)
 
 
 </div>
