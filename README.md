@@ -201,7 +201,7 @@ To get more clear information this is was the function of each block.
 ## 🎉 Acknowledgments <a name = "acknowledgments"></a>
 
 This project was my final project during my time as student at Islamic University Of Indonesia. Special thank's for my lecturer because I can't completed this project without 
-my lecturer ([Agung Nugroho Adi, ST., MT](https://mechanical.uii.ac.id/agung-nugroho-adi-st-mt/)) feedback and insight and for the mor information you can read my [full 
+my lecturer ([Agung Nugroho Adi, ST., MT](https://mechanical.uii.ac.id/agung-nugroho-adi-st-mt/)) feedback and insight and for the more information you can read my [full 
 report](https://dspace.uii.ac.id/handle/123456789/33358).
 
 
