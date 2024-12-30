@@ -148,8 +148,9 @@ Picture 4 MySQL Library
   ### ⛏️ XAMPP Setup <a name = "xampp_setup"></a>
   After XAMPP installed open the XAMPP app ➡️ click start button on the Apache module and SQL module ➡️ go to browser and type [localhost](http://localhost/dashboard/), once you in XAMPP dashboard go to phpMyAdmin ➡️ click new to create a new database or you can see full documentation in [here](https://www.phpmyadmin.net/docs/).
 
-  ### Excel Setup <a name = "excel_setup"></a>
+  ### 📊 Excel Setup <a name = "excel_setup"></a>
   In this project i need to develop the logistic reggression from the dataset another analyst that i need to perform was wilcoxon test. To perform that analysis i use Kamakura's Analytic Tools for Excel. You can download the add-in and read the documentation paper in their [Kamakura's](https://www.katexcel.com/download) website.
+  
 ## 📒 MySQL Table Design <a name = "mysql_table_design"></a>
 
 You can generate database in MySQL by following this query.
