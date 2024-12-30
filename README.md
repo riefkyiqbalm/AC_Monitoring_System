@@ -50,7 +50,7 @@ This project is for "educational and research purposes only".
   - Past performance does not indicate future results
   - Creator assumes no liability for the kind of damage
   - Consult a maintenance enginner for maintenance deccision
-  - The model in frist image was made by myself and not intended to be real product.
+  - The model in frist image was made by myself and not indicated to be real product.
 
 By using this resource, you agree to use it solely for learning purposes.
 
