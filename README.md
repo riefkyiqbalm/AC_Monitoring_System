@@ -146,7 +146,7 @@ Picture 4 MySQL Library
 </p>
 
   ### ⛏️ XAMPP Setup <a name = "xampp_setup"></a>
-  After XAMPP installed open the XAMPP app ➡️ click start button on the Apache module and SQL module ➡️ go to browser and type [localhost](http://localhost/dashboard/), once you in XAMPP dashboard go to phpMyAdmin ➡️ click new to create a new database or you can see full documentation in [here](https://www.phpmyadmin.net/docs/).
+  We need XAMPP software to change my personal laptop into a server pc, which can hosting the database system using port and several protocol. After XAMPP installed open the XAMPP app ➡️ click start button on the Apache module and SQL module ➡️ go to browser and type [localhost](http://localhost/dashboard/), once you in XAMPP dashboard, go to phpMyAdmin ➡️ click new button to create a new database or you can see full documentation in [here](https://www.phpmyadmin.net/docs/).
 
   ### 📊 Excel Setup <a name = "excel_setup"></a>
   In this project I need to develop the logistic regression from the dataset and I need perform Wilcoxon test. I use Kamakura’s Analytic Tools for Excel to perform the logistic regression and the Wilcoxon test. You can download the add-in and read the documentation paper in their Kamakura’s website. You can see the documentation and download the tools from [Kamakura's](https://www.katexcel.com/download) website.
