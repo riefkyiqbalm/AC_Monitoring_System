@@ -13,7 +13,7 @@
 </div>
 
 
-<h1 align="center">Air Condtioner Monitoring System</h1>
+<h1 align="center">Air Conditioner Monitoring System</h1>
 
 
   In this project i was developing the air conditioner monitoring system to find out the evaporator and condensor filter condition during the COVID-19 pandemic by collected the temperature and humidity data and send it to the dashboard User Interface.
