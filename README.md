@@ -16,7 +16,7 @@
 <h1 align="center">Air Conditioner Monitoring System</h1>
 
 
-  In this project i was developing the air conditioner monitoring system to find out the evaporator and condensor filter condition during the COVID-19 pandemic by collected the temperature and humidity data and send it to the dashboard User Interface.
+ In this project, I was developing the air conditioner monitoring system to find out the evaporator and condensor filter condition during the COVID-19 pandemic by collected the temperature and humidity data and send it to the dashboard User Interface via the internet communication. Main goal of this project was the system must be able to alert the operator about the air filter condition or to starting the maintenance schedule during the COVID-19.
 
   To achieve that goal we need to implement several hardware and software:
 
