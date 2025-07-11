@@ -41,7 +41,7 @@
 Picture 1 Communication Design
 </p>
 
-# ❗❗ Disclaimer ❗❗
+## ❗❗ Disclaimer ❗❗
 
 This project is for "educational and research purposes only".
 
